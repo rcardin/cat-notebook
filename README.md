@@ -13,12 +13,15 @@ In functional programming, we compose functions, but also "concurrency", which m
 ## Introduction: Arrows and Objects
 A category is a set of objects and arrows that go between them. Arrows compose: If there is an arrow between objects `A` and `B`, then there must be an arrow between objects `A` and `C`. This last arrow is called the _composition_ of the previous two. 
 
-Arrows are also called _morphisms_. Morphisms can be thought of as functions. Their composition is denoted by a small circle between functions: `g∘f`. Functions compose right to left. You should read the formula `g∘f` as "_apply g after f", precisely in the same way you read the function `g(f(a))`.
+Arrows are also called _morphisms_. Morphisms can be thought of as functions. Their composition is denoted by a small circle between functions: `g∘f`. Functions compose right to left. You should read the formula `g∘f` as "_apply g after f_", precisely in the same way you read the function `g(f(a))`.
 
 Different programming languages support function composition, using a dedicated syntax.
 
 Haskell provides the following syntax. Given the functions `f :: A -> B` and `g :: B -> C`, their composition is achieved through the function `g . f` (or `g ∘ f`, for the _hardcore_ developers).
 
+In Scala, the composition has two dedicated methods, despite of you want to compose f with g or viceversa. Using the `compose` function, you can achieve the same semantics of the mathematical composition `g∘f`. `val fComposeG = g _ compose f _` is equal to `g(f(x)`. Whereas, `andThen` has the opposite semantics. `val gAndThenF = g _ andThen f _` is equal to `f(g(x)`.
+
 ## References
 - [Category Theory for Programmers](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/)
 - [Learn You a Haskell for Great Good](http://learnyouahaskell.com/)
+- [Pattern Matching and Functional Composition](https://twitter.github.io/scala_school/pattern-matching-and-functional-composition.html)

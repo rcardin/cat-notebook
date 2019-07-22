@@ -15,6 +15,10 @@ A category is a set of objects and arrows that go between them. Arrows compose: 
 
 Arrows are also called _morphisms_. Morphisms can be thought of as functions. Their composition is denoted by a small circle between functions: `g∘f`. Functions compose right to left. You should read the formula `g∘f` as "_apply g after f", precisely in the same way you read the function `g(f(a))`.
 
+Different programming languages support function composition, using a dedicated syntax.
+
+Haskell provides the following syntax. Given the functions `f :: A -> B` and `g :: B -> C`, their composition is achieved through the function `g . f` (or `g ∘ f`, for the _hardcore_ developers).
+
 ## References
 - [Category Theory for Programmers](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/)
 - [Learn You a Haskell for Great Good](http://learnyouahaskell.com/)

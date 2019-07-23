@@ -20,7 +20,7 @@ Different programming languages support function composition, using a dedicated 
 Haskell provides the following syntax. Given the functions `f :: A -> B` and `g :: B -> C`, their composition is achieved through the function `g . f` (or `g ∘ f`, for the _hardcore_ developers).
 
 In Scala, the composition has two dedicated methods, despite of you want to compose f with g or viceversa. Using the `compose` function, you can achieve the same semantics of the mathematical composition `g∘f`. 
-```scale
+```scala
 val fComposeG = g _ compose f _
 ``` 
 is equal to `g(f(x)`. Whereas, `andThen` has the opposite semantics. 

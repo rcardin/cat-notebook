@@ -29,6 +29,25 @@ val gAndThenF = g _ andThen f _
 ``` 
 is equal to `f(g(x)`.
 
+### Arrows composition properties
+
+The composition of "arrows", or _morphisms_, must satisfy some propeties. In details, the composition must be associative and it must have a _unit of composition_.
+
+Being associative means that no matter what is the order you compose three composable morphisms, they must always return the same result. In other words, it means the following.
+
+```
+(g ∘ f) ∘ h = g ∘ (f ∘ h) = g ∘ f ∘ h
+```
+
+The unit of composition is an arrow that simply starts and ends in the same category object. In the case of functions, the identity function just returns its argument. In Haskell is defined as the following.
+
+```haskell
+id :: a -> a
+id x = x
+```
+
+Such morphim, when composed with any other morphism, returns the latter.
+
 ## References
 - [Category Theory for Programmers](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/)
 - [Learn You a Haskell for Great Good](http://learnyouahaskell.com/)

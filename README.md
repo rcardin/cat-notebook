@@ -46,7 +46,7 @@ id :: a -> a
 id x = x
 ```
 
-Calling `id_a` the identity arrow for the object A, and `f:: A -> B`, then we have that
+Such morphim, when composed with any other morphism, returns the latter. Calling `id_a` the identity arrow for the object A, and `f:: A -> B`, then we have that
 
 ```
 f ∘ id_a = f
@@ -57,10 +57,6 @@ and that
 ```
 id_b ∘ f = f
 ```
-
-
-
-Such morphim, when composed with any other morphism, returns the latter.
 
 ## References
 - [Category Theory for Programmers](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/)

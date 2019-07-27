@@ -58,6 +58,11 @@ and that
 id_b ∘ f = f
 ```
 
+## Types and Functions
+Composition is at the core of Cathegory Theory. However, not any two arrows can be composed. The target object of the first arrow must be the same of the source object of the second arrow. 
+
+What are types? A first attempt to give an answer to this question is that _types_ are sets of values. Sets can be _finite_, such as `Boolean`, or they can be _infinite_, such as `String`.
+
 ## References
 - [Category Theory for Programmers](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/)
 - [Learn You a Haskell for Great Good](http://learnyouahaskell.com/)

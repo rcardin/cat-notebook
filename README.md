@@ -61,7 +61,9 @@ id_b ∘ f = f
 ## Types and Functions
 Composition is at the core of Cathegory Theory. However, not any two arrows can be composed. The target object of the first arrow must be the same of the source object of the second arrow. 
 
-What are types? A first attempt to give an answer to this question is that _types_ are sets of values. Sets can be _finite_, such as `Boolean`, or they can be _infinite_, such as `String`.
+What are types? A first attempt to give an answer to this question is that _types_ are sets of values. Sets can be _finite_, such as `Boolean`, or they can be _infinite_, such as `String`. Declaring `x` to be of type `Integer` means that the variable is an element of the integers' set. 
+
+**Sets** is a particular type of category, in which objects are sets and arrows are functions defined between sets. Referring to a programming language, can we say that the types and functions defined in the language define a category? The answer is _no_. Unfortunately, the devil is in the details. A pure mathematical function does not compute any results for a function. It just knows that the function returns that result. A function defined in a programming language has to calculate which is the output of a function, given its input.
 
 ## References
 - [Category Theory for Programmers](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/)
